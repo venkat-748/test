@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="script.js"></script>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v4.1.1">
+<title>Signup Template · Bootstrap</title>
+<link href="style.css" rel="stylesheet">
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+td, h1 {
+	color: white;
+}
+
+a {
+	color: e8eff7;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+body {
+	background-color: black;
+}
+
+#total {
+	display: block;
+}
+
+#information {
+	margin-left: 10vw;
+	display: none;
+}
+
+#seats, #sleeper, #twoAC, #threeAC, #seatscat {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: 5vw;
+	display: none;
+}
+
+#link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 2vh;
+	margin-left: 2vw;
+	cursor: pointer
+}
+
+#success {
+	display: none;
+}
+
+#cash {
+	display: none;
+}
+</style>
+</head>
+<body class="text-center">
+	<div id="total" class="form-signin">
+		<h1 style="color: white">Ticket Registration</h1>
+		<label for="start" class="sr-only">Date</label> <input type="date"
+			name="date" id="date"  class="form-control"
+			placeholder="date" autofocus> <label for="start"
+			class="sr-only">Password</label> <input type="text" name="start"
+			id="start" value="shengottai" class="form-control"
+			placeholder="start" required> <input type="text" name="end"
+			id="end" value="madurai" class="form-control" placeholder="end"
+			required>
+		<button onclick="checking()" id="check"
+			class="btn btn-lg btn-primary btn-block" type="submit">checking</button>
+		<h2 id="result" style="color: red"></h2>
+	</div>
+
+	<div id="information">
+		<table id="table" border="2px solid white"
+			style='text-align: center; margin-left: 30vw; margin-top: 30vh; border-collapse: collapse'></table>
+	</div>
+	<div id="link"></div>
+	<div id="success">
+		<h1 id="details"></h1>
+		<h2 id="username"></h2>
+		<h2 id="train"></h2>
+		<h2 id="tick"></h2>
+		<h2 id="fromPlace"></h2>
+		<h2 id="toPlace"></h2>
+		<h2 id="day"></h2>
+		<h2 id="thanks"></h2>
+		<button id="confirmTicket">confirm</button>
+		<button id="cancel">cancel</button>
+	</div>
+
+	<div id="seats"
+		style="height: 100vh; width: 85vw; border: 1px solid white;">
+		<div id="sleeper"></div>
+		<div id="twoAC"></div>
+		<div id="threeAC"></div>
+		<div id="seatscat">
+			<div id="slp"
+				style="background-color: #9BDDFF; height: 6vh; width: 10vh; margin-left: 1vh;">sleeper</div>
+			<div id="tAC"
+				style="background-color: #ED8179; height: 6vh; width: 10vh; margin-left: 1vh">2AC</div>
+			<div id="thAC"
+				style="background-color: #FFF8DC; height: 6vh; width: 10vh; margin-left: 1vh">3AC</div>
+		</div>
+	</div>
+	<div id="cash">
+		<h1 id="payment"></h1>
+		<button id="buy">buy</button>
+	</div>
+</body>
+</body>
+</html>
